@@ -66,8 +66,8 @@
 
   function getCleanUrl() {
     var href = window.location.href.split('#')[0];
-    if (href.indexOf('file:') === 0) {
-      return 'https://wa.me/916381745435';
+    if (href.indexOf('file:') === 0 || href.indexOf('localhost') !== -1 || href.indexOf('127.0.0.1') !== -1) {
+      return 'https://sakthiitmalar.github.io/lawyer/';
     }
     return href;
   }
